@@ -28,6 +28,8 @@ jobs:
       - uses: Swatinem/rust-cache@v2
       - name: Build
         run: |
+          node -v
+          npm -v
           rustup update stable
           # cargo install wasm-pack
           curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
